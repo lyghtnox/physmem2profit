@@ -26,6 +26,7 @@ docker build .
 ```bash
 docker run -it --rm --device=/dev/fuse --cap-add SYS_ADMIN physmem2profit
 ```
+Driver source (to use with --install): https://github.com/Velocidex/WinPmem/blob/master/kernel/binaries/winpmem_x64.sys
 
 ## Installation Instructions
 
