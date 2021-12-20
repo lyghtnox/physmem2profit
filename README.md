@@ -14,6 +14,18 @@ The tool has two components:
     * When executed with `--mode mount`, connects to the target machine and mounts the physical RAM of the target as a raw file with the help of [FUSE](https://en.wikipedia.org/wiki/Filesystem_in_Userspace)
     * When executed with `--mode dump`, calls various [Rekall](https://github.com/google/rekall) plugins to analyze the memory image and to generate a minidump of the LSASS process.
     * When executed with `--mode all`, performs both of the above actions. Connection with server will be closed when dump is complete.
+## Docker
+### Build
+```bash
+git clone --recurse-submodules https://github.com/lyghtnox/physmem2profit
+cd physmem2profit/server
+docker build .
+```
+
+### Run
+```bash
+docker run -it --rm --device=/dev/fuse --cap-add SYS_ADMIN physmem2profit
+```
 
 ## Installation Instructions
 
