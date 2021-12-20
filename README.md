@@ -82,3 +82,6 @@ Kudos for contributing:
 * Janusz Szmigielski for refactoring the code for the first release
 * Pawel Kurowski for refactoring the code for the first release
 * Grzegorz Rychlik for refactoring the code for the first release
+
+## TODO
+- [ ] Add pypykatz module to Rekall to parse the dmp
