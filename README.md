@@ -18,7 +18,7 @@ The tool has two components:
 ### Build
 ```bash
 git clone --recurse-submodules https://github.com/lyghtnox/physmem2profit
-cd physmem2profit/server
+cd physmem2profit/client
 docker build .
 ```
 
