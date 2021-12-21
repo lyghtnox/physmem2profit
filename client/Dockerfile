@@ -13,4 +13,4 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT [ "python /usr/src/physmem2profit" ]
+ENTRYPOINT [ "python", "/usr/src/physmem2profit/physmem2profit" ]
